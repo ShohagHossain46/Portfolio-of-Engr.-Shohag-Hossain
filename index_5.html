@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Engr. Shohag Hossain — Mechanical Engineer, Power &amp; Utilities</title>
+<meta name="description" content="Engr. Shohag Hossain — PMP-certified Mechanical Engineer, Deputy Manager Operation &amp; Maintenance at Bangladesh-India Friendship Power Company Limited.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg: #FFFFFF;
+    --bg-alt: #F6F8FA;
+    --ink: #1B2733;
+    --navy: #0E3A5F;
+    --navy-deep: #0A2A45;
+    --copper: #B8752E;
+    --muted: #5D6B78;
+    --border: #E3E7EB;
+    --border-strong: #D2D9DF;
+
+    --serif: 'IBM Plex Serif', Georgia, serif;
+    --sans: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+
+  *{ box-sizing: border-box; }
+  html{ scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce){
+    html{ scroll-behavior: auto; }
+    *{ animation-duration: 0.001ms !important; transition-duration: 0.001ms !important; }
+  }
+
+  body{
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--sans);
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  a{ color: inherit; }
+
+  .wrap{
+    max-width: 1040px;
+    margin: 0 auto;
+    padding: 0 32px;
+  }
+
+  /* ---------- Nav ---------- */
+  header.site-nav{
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background: rgba(255,255,255,0.92);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--border);
+  }
+  .nav-inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 68px;
+  }
+  .nav-mark{
+    font-family: var(--serif);
+    font-weight: 500;
+    font-size: 17px;
+    color: var(--navy-deep);
+    text-decoration: none;
+    letter-spacing: 0.01em;
+  }
+  nav.nav-links{
+    display: flex;
+    gap: 30px;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  nav.nav-links a{
+    text-decoration: none;
+    color: var(--muted);
+    padding-bottom: 3px;
+    border-bottom: 2px solid transparent;
+    transition: color 0.2s ease, border-color 0.2s ease;
+  }
+  nav.nav-links a:hover,
+  nav.nav-links a.active{
+    color: var(--navy-deep);
+    border-color: var(--copper);
+  }
+  .nav-cta{
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #FFFFFF;
+    background: var(--navy);
+    padding: 10px 20px;
+    border-radius: 6px;
+    white-space: nowrap;
+    transition: background 0.2s ease;
+  }
+  .nav-cta:hover{ background: var(--navy-deep); }
+
+  main{ position: relative; }
+
+  /* ---------- Section eyebrow ---------- */
+  .eyebrow-label{
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: var(--copper);
+    margin: 0 0 12px 0;
+    display: inline-block;
+    position: relative;
+    padding-bottom: 10px;
+  }
+  .eyebrow-label::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 36px;
+    height: 3px;
+    background: var(--copper);
+    border-radius: 2px;
+  }
+
+  section{ padding: 88px 0; }
+  section.alt{ background: var(--bg-alt); }
+  section + section{ border-top: 1px solid var(--border); }
+
+  /* ---------- Hero ---------- */
+  .hero{
+    padding: 96px 0 76px 0;
+    background: linear-gradient(180deg, #FBFCFD 0%, #FFFFFF 100%);
+  }
+  h1.name{
+    font-family: var(--serif);
+    font-weight: 500;
+    font-size: clamp(38px, 5.5vw, 58px);
+    line-height: 1.1;
+    margin: 0 0 16px 0;
+    color: var(--navy-deep);
+  }
+  .role-line{
+    font-size: 19px;
+    font-weight: 600;
+    color: var(--navy);
+    margin: 0 0 16px 0;
+  }
+  .role-sub{
+    font-size: 16.5px;
+    color: var(--muted);
+    margin: 0 0 36px 0;
+    max-width: 62ch;
+  }
+  .hero-actions{ display: flex; gap: 14px; flex-wrap: wrap; }
+  .btn{
+    font-size: 14.5px;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 13px 24px;
+    border-radius: 6px;
+    display: inline-block;
+    border: 1.5px solid var(--navy);
+    transition: all 0.2s ease;
+  }
+  .btn-solid{ background: var(--navy); color: #FFFFFF; }
+  .btn-solid:hover{ background: var(--navy-deep); border-color: var(--navy-deep); }
+  .btn-outline{ background: transparent; color: var(--navy); }
+  .btn-outline:hover{ background: var(--navy); color: #FFFFFF; }
+
+  /* Stat row */
+  .stat-row{
+    margin-top: 56px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border-top: 1px solid var(--border);
+    padding-top: 32px;
+  }
+  .stat-cell{
+    padding: 0 20px;
+    border-left: 1px solid var(--border);
+  }
+  .stat-cell:first-child{ border-left: none; padding-left: 0; }
+  .stat-label{
+    font-size: 12.5px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin: 0 0 8px 0;
+  }
+  .stat-value{
+    font-family: var(--serif);
+    font-size: 21px;
+    color: var(--navy-deep);
+    margin: 0;
+  }
+
+  /* ---------- About ---------- */
+  .about-body{ max-width: 76ch; }
+  .lede{
+    font-family: var(--serif);
+    font-size: 23px;
+    line-height: 1.55;
+    color: var(--navy-deep);
+    margin: 0 0 22px 0;
+  }
+  p.copy{ font-size: 16px; color: var(--ink); margin: 0 0 16px 0; }
+  p.copy:last-child{ margin-bottom: 0; }
+
+  /* ---------- Impact metrics ---------- */
+  .impact-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+  .impact-card{
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 28px 24px;
+  }
+  .impact-value{
+    font-family: var(--serif);
+    font-size: 38px;
+    color: var(--navy-deep);
+    margin: 0 0 10px 0;
+    line-height: 1;
+  }
+  .impact-value span{ color: var(--copper); }
+  .impact-desc{ font-size: 14.5px; color: var(--muted); margin: 0; }
+  .impact-note{ margin-top: 28px; font-size: 15px; color: var(--muted); }
+  .impact-note b{ color: var(--navy-deep); font-weight: 600; }
+
+  /* ---------- Timeline ---------- */
+  .timeline{ position: relative; padding-left: 32px; }
+  .timeline::before{
+    content: "";
+    position: absolute;
+    left: 5px;
+    top: 6px;
+    bottom: 6px;
+    width: 2px;
+    background: var(--border);
+  }
+  .t-item{ position: relative; padding-bottom: 44px; }
+  .t-item:last-child{ padding-bottom: 0; }
+  .t-item::before{
+    content: "";
+    position: absolute;
+    left: -32px;
+    top: 4px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #FFFFFF;
+    border: 3px solid var(--copper);
+  }
+  .t-year{
+    font-size: 13.5px;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    color: var(--copper);
+    margin: 0 0 6px 0;
+  }
+  .t-role{ font-family: var(--serif); font-size: 20px; color: var(--navy-deep); margin: 0 0 4px 0; }
+  .t-org{ font-size: 14.5px; color: var(--muted); margin: 0 0 12px 0; }
+  .t-desc{ font-size: 15.5px; color: var(--ink); margin: 0; max-width: 66ch; }
+  .t-desc ul{ margin: 0; padding-left: 18px; }
+  .t-desc li{ margin-bottom: 7px; }
+  .t-desc li:last-child{ margin-bottom: 0; }
+
+  /* ---------- Capability grid ---------- */
+  .cap-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .cap-card{
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 30px;
+  }
+  .cap-title{ font-family: var(--serif); font-size: 19px; color: var(--navy-deep); margin: 0 0 10px 0; }
+  .cap-desc{ font-size: 15px; color: var(--muted); margin: 0; }
+
+  .tools-row{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+  .tool-cell{
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 16px;
+    text-align: center;
+    font-size: 14.5px;
+    font-weight: 600;
+    color: var(--navy-deep);
+  }
+
+  /* ---------- Education / recognition ---------- */
+  .edu-grid{ display: grid; grid-template-columns: 1fr 1fr; gap: 48px; }
+  .edu-block h3{ font-family: var(--serif); font-size: 20px; color: var(--navy-deep); margin: 0 0 6px 0; }
+  .edu-block p.meta{ font-size: 14.5px; color: var(--muted); margin: 0 0 4px 0; }
+  .edu-divider{ height: 1px; background: var(--border); margin: 20px 0; }
+  .rec-list{ list-style: none; margin: 0; padding: 0; }
+  .rec-list li{
+    font-size: 15px;
+    color: var(--ink);
+    padding: 13px 0;
+    border-top: 1px solid var(--border);
+  }
+  .rec-list li:first-child{ border-top: none; }
+
+  /* ---------- Next / CTA band ---------- */
+  .callout{ background: var(--navy-deep); color: #FFFFFF; }
+  .callout .eyebrow-label{ color: #DDBE8C; }
+  .callout .eyebrow-label::after{ background: #DDBE8C; }
+  .callout-inner{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+    align-items: start;
+  }
+  .callout h2{
+    font-family: var(--serif);
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 1.3;
+    margin: 0;
+    color: #FFFFFF;
+  }
+  .callout p{ font-size: 16px; color: rgba(255,255,255,0.82); margin: 0 0 14px 0; }
+  .callout p:last-child{ margin-bottom: 0; }
+
+  /* ---------- Contact ---------- */
+  .contact-grid{ display: grid; grid-template-columns: 1.2fr 1fr; gap: 48px; align-items: start; }
+  .contact-list{ list-style: none; margin: 0; padding: 0; }
+  .contact-list li{
+    border-top: 1px solid var(--border);
+    padding: 18px 0;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  .contact-list li:last-child{ border-bottom: 1px solid var(--border); }
+  .c-label{ font-size: 13px; font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; color: var(--muted); white-space: nowrap; }
+  .c-value{ font-size: 16px; text-align: right; }
+  a.c-value{
+    text-decoration: none;
+    color: var(--navy);
+    border-bottom: 1.5px solid var(--border-strong);
+    transition: border-color 0.2s ease, color 0.2s ease;
+  }
+  a.c-value:hover{ color: var(--copper); border-color: var(--copper); }
+
+  /* ---------- Footer ---------- */
+  footer{
+    padding: 32px 0;
+    border-top: 1px solid var(--border);
+  }
+  .footer-row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+    font-size: 13.5px;
+    color: var(--muted);
+  }
+  .footer-row a{ text-decoration: none; color: var(--muted); }
+  .footer-row a:hover{ color: var(--navy); }
+
+  /* ---------- Reveal on scroll ---------- */
+  .reveal{ opacity: 0; transform: translateY(14px); transition: opacity 0.6s ease, transform 0.6s ease; }
+  .reveal.is-visible{ opacity: 1; transform: translateY(0); }
+
+  /* ---------- Responsive ---------- */
+  @media (max-width: 860px){
+    .stat-row{ grid-template-columns: repeat(2, 1fr); row-gap: 24px; }
+    .stat-cell:nth-child(3){ border-left: none; }
+    .impact-grid{ grid-template-columns: repeat(2, 1fr); }
+    .callout-inner{ grid-template-columns: 1fr; }
+    .contact-grid{ grid-template-columns: 1fr; }
+    .cap-grid{ grid-template-columns: 1fr; }
+    .tools-row{ grid-template-columns: repeat(2, 1fr); }
+    .edu-grid{ grid-template-columns: 1fr; gap: 32px; }
+    nav.nav-links{ display: none; }
+    .wrap{ padding: 0 20px; }
+    section{ padding: 60px 0; }
+  }
+
+  :focus-visible{ outline: 2px solid var(--copper); outline-offset: 2px; }
+</style>
+</head>
+<body>
+
+<header class="site-nav">
+  <div class="wrap nav-inner">
+    <a href="#top" class="nav-mark">Engr. Shohag Hossain</a>
+    <nav class="nav-links" aria-label="Section navigation">
+      <a href="#about">Profile</a>
+      <a href="#impact">Impact</a>
+      <a href="#experience">Experience</a>
+      <a href="#expertise">Expertise</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="nav-cta" href="mailto:shohaghossainruet@gmail.com">Email</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="wrap">
+      <p class="role-line" style="color: var(--copper); font-size: 14px; letter-spacing: 0.06em; text-transform: uppercase; font-weight: 600;">Mechanical Engineer · Power &amp; Utilities</p>
+      <h1 class="name">Engr. Shohag Hossain</h1>
+      <p class="role-line">Deputy Manager, Operation &amp; Maintenance (CHP)</p>
+      <p class="role-sub">PMP-certified Mechanical Engineer with 6+ years across power generation, pharmaceutical, and chemical operations — including field-level engineering on Bangladesh's first 1,320&nbsp;MW ultra-supercritical coal power plant.</p>
+      <div class="hero-actions">
+        <a class="btn btn-solid" href="mailto:shohaghossainruet@gmail.com">Get in touch</a>
+        <a class="btn btn-outline" href="https://www.linkedin.com/in/engr-shohag-hossain-144116105" target="_blank" rel="noopener">View LinkedIn</a>
+      </div>
+
+      <div class="stat-row reveal">
+        <div class="stat-cell"><p class="stat-label">Discipline</p><p class="stat-value">Mechanical Eng.</p></div>
+        <div class="stat-cell"><p class="stat-label">Experience</p><p class="stat-value">6+ Years</p></div>
+        <div class="stat-cell"><p class="stat-label">Certification</p><p class="stat-value">PMP</p></div>
+        <div class="stat-cell"><p class="stat-label">Location</p><p class="stat-value">Khulna, BD</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Profile -->
+  <section id="about">
+    <div class="wrap">
+      <p class="eyebrow-label reveal">Profile</p>
+      <div class="about-body reveal">
+        <p class="lede">Six years across power generation, pharmaceutical, and chemical operations — including hands-on engineering on Bangladesh's first ultra-supercritical coal power plant.</p>
+        <p class="copy">Shohag is currently Deputy Manager in the Operation &amp; Maintenance department at BIFPCL, promoted from Assistant Manager in July 2026. He directs preventive and predictive maintenance strategy for the coal handling plant of a 1,320&nbsp;MW ultra-supercritical facility, oversees work-permit and HSE compliance, and leads cross-functional coordination between operations, maintenance, and utilities teams.</p>
+        <p class="copy">Before BIFPCL, he built a foundation across pharmaceutical utilities (Renata Limited) and industrial chemical operations (Samuda Chemical Complex) — commissioning HVAC, chillers, compressors, and fire-protection systems, and running root-cause-driven reliability programs. He's PMP certified, proficient in AutoCAD, SolidWorks, and HAP, and is now working toward the next phase of his career: MEP design and consultancy for buildings.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Impact -->
+  <section id="impact" class="alt">
+    <div class="wrap">
+      <p class="eyebrow-label reveal">Impact</p>
+      <div class="impact-grid reveal">
+        <div class="impact-card">
+          <p class="impact-value"><span>15%</span></p>
+          <p class="impact-desc">Reduction in unplanned downtime through preventive &amp; predictive maintenance programs at BIFPCL.</p>
+        </div>
+        <div class="impact-card">
+          <p class="impact-value"><span>10%</span></p>
+          <p class="impact-desc">Cost savings delivered independently at both BIFPCL and Renata Limited through continuous-improvement initiatives.</p>
+        </div>
+        <div class="impact-card">
+          <p class="impact-value"><span>50</span></p>
+          <p class="impact-desc">Person operations team led and scheduled at the coal handling plant, by skillset and shift priority.</p>
+        </div>
+        <div class="impact-card">
+          <p class="impact-value"><span>20%</span></p>
+          <p class="impact-desc">Reduction in workplace incidents at Samuda Chemical Complex through structured safety briefings.</p>
+        </div>
+      </div>
+      <p class="impact-note reveal">Also served as field-level engineer on <b>Bangladesh's first 1,320&nbsp;MW ultra-supercritical coal power plant</b>, leading commissioning of Portal Reclaimer and Ship Unloader systems (TAKRAF).</p>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience">
+    <div class="wrap">
+      <p class="eyebrow-label reveal">Experience</p>
+      <div class="timeline reveal">
+
+        <div class="t-item">
+          <p class="t-year">Jul 2026 — Present</p>
+          <p class="t-role">Deputy Manager, Operation &amp; Maintenance (CHP)</p>
+          <p class="t-org">Bangladesh-India Friendship Power Company Limited (BIFPCL) · Khulna</p>
+          <div class="t-desc">
+            <ul>
+              <li>Promoted from Assistant Manager in recognition of performance leading engineering and maintenance at the coal handling plant of a 1,320&nbsp;MW ultra-supercritical station.</li>
+              <li>Directs preventive &amp; predictive maintenance strategy, sustaining the 15% downtime reduction achieved in the prior role.</li>
+              <li>Oversees work-permit (PTW) issuance and HSE compliance — LOTO, hot work, height work, confined space.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="t-item">
+          <p class="t-year">Sep 2022 — Jun 2026</p>
+          <p class="t-role">Assistant Manager, Operation &amp; Maintenance (CHP)</p>
+          <p class="t-org">Bangladesh-India Friendship Power Company Limited (BIFPCL) · Khulna</p>
+          <div class="t-desc">
+            <ul>
+              <li>Field-level engineer on the mega-construction project for Bangladesh's first 1,320&nbsp;MW ultra-supercritical coal power plant.</li>
+              <li>Led commissioning of Portal Reclaimer and Ship Unloader systems (manufacturer: TAKRAF).</li>
+              <li>Developed preventive &amp; predictive maintenance programs, cutting downtime by 15%; drove continuous improvement delivering 10% cost savings.</li>
+              <li>Led and scheduled a 50-person operations team by individual skillset.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="t-item">
+          <p class="t-year">Dec 2020 — Jan 2022</p>
+          <p class="t-role">Engineering Executive (deputed to NPTI)</p>
+          <p class="t-org">BIFPCL / National Power Training Institute · Faridabad, Haryana, India</p>
+          <div class="t-desc">Completed theoretical and practical training on supercritical thermal power plant operation and maintenance.</div>
+        </div>
+
+        <div class="t-item">
+          <p class="t-year">Jun 2020 — Aug 2022</p>
+          <p class="t-role">Senior Officer, Engineering Department</p>
+          <p class="t-org">Renata Limited (formerly Pfizer Limited) · Mymensingh</p>
+          <div class="t-desc">
+            <ul>
+              <li>Managed installation and commissioning of chillers, cooling towers, dust collectors, compressors, air dryers, vacuum pumps, HVAC, fire-protection, and piping systems.</li>
+              <li>Ran O&amp;M of HVAC systems, chillers, exhaust fans, and DG sets; cut maintenance budget by 10%.</li>
+              <li>Reviewed SOPs/EOPs and mentored junior officers.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="t-item">
+          <p class="t-year">Nov 2019 — Jun 2020</p>
+          <p class="t-role">Engineer</p>
+          <p class="t-org">Samuda Chemical Complex Limited · Dhaka</p>
+          <div class="t-desc">Executed installation work with foreign teams; delivered safety briefings that cut workplace incidents by 20%; prepared scopes of work and maintenance protocols.</div>
+        </div>
+
+        <div class="t-item">
+          <p class="t-year">May 2017 — Jul 2017</p>
+          <p class="t-role">Automobile Assembly Intern</p>
+          <p class="t-org">Runner Motors Limited · Mymensingh</p>
+          <div class="t-desc">Worked across engine assembly, heat treatment, denting/painting, and pre-delivery inspection; designed a cost-optimized production line layout.</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Expertise -->
+  <section id="expertise" class="alt">
+    <div class="wrap">
+      <p class="eyebrow-label reveal">Expertise</p>
+      <div class="cap-grid reveal">
+        <div class="cap-card">
+          <h3 class="cap-title">Preventive &amp; Predictive Maintenance</h3>
+          <p class="cap-desc">Program development and root-cause-driven reliability improvement across power, pharma, and chemical operations.</p>
+        </div>
+        <div class="cap-card">
+          <h3 class="cap-title">Equipment Commissioning</h3>
+          <p class="cap-desc">Ship unloaders, portal reclaimers, chillers, compressors, HVAC, and fire-protection systems — from OEM coordination through handover.</p>
+        </div>
+        <div class="cap-card">
+          <h3 class="cap-title">Project &amp; Risk Management</h3>
+          <p class="cap-desc">PMP certified. Cost/timing estimation, risk management planning, and contract/tender evaluation for industrial projects.</p>
+        </div>
+        <div class="cap-card">
+          <h3 class="cap-title">HSE &amp; Utilities Management</h3>
+          <p class="cap-desc">Work-permit (PTW) control — LOTO, hot work, height work, confined space — plus budget control and contractor/vendor management.</p>
+        </div>
+      </div>
+      <div class="tools-row reveal">
+        <div class="tool-cell">AutoCAD</div>
+        <div class="tool-cell">SolidWorks</div>
+        <div class="tool-cell">HAP</div>
+        <div class="tool-cell">MS Office</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education & Recognition -->
+  <section id="education">
+    <div class="wrap">
+      <p class="eyebrow-label reveal">Education &amp; Recognition</p>
+      <div class="edu-grid reveal">
+        <div class="edu-block">
+          <h3>B.Sc. in Mechanical Engineering</h3>
+          <p class="meta">Rajshahi University of Engineering and Technology (RUET), Bangladesh</p>
+          <p class="meta">Mar 2014 – Dec 2018 · GPA 3.19/4.00</p>
+          <div class="edu-divider"></div>
+          <h3>PMP® — Project Management Professional</h3>
+          <p class="meta">Project Management Institute (PMI), 2026</p>
+        </div>
+        <ul class="rec-list">
+          <li>Letter of Appreciation for outstanding performance — BIFPCL</li>
+          <li>Class Representative, Mechanical Engineering, RUET (2015–2016)</li>
+          <li>Member, Society of Automotive Engineers (SAE), RUET (2016–2018)</li>
+          <li>Volunteer, International Conference on Mechanical, Industrial and Materials Engineering (ICMIME-2017), RUET</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Next -->
+  <section id="next" class="callout">
+    <div class="wrap">
+      <p class="eyebrow-label reveal">What's Next</p>
+      <div class="callout-inner reveal">
+        <h2>Building toward MEP design &amp; consultancy.</h2>
+        <div>
+          <p>The next step is a deliberate move from industrial plant operations toward MEP work — HVAC, electrical, and plumbing systems for buildings.</p>
+          <p>Alongside the PMP credential, he's been broadening into business and leadership fundamentals through further coursework, to complement a purely engineering foundation.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="alt">
+    <div class="wrap">
+      <p class="eyebrow-label reveal">Contact</p>
+      <div class="contact-grid reveal">
+        <div>
+          <p class="lede">Open to conversations on power plant operations, project management, and MEP opportunities.</p>
+        </div>
+        <ul class="contact-list">
+          <li><span class="c-label">Email</span><a class="c-value" href="mailto:shohaghossainruet@gmail.com">shohaghossainruet@gmail.com</a></li>
+          <li><span class="c-label">Phone</span><a class="c-value" href="tel:+8801755247511">+880 1755-247511</a></li>
+          <li><span class="c-label">LinkedIn</span><a class="c-value" href="https://www.linkedin.com/in/engr-shohag-hossain-144116105" target="_blank" rel="noopener">engr-shohag-hossain</a></li>
+          <li><span class="c-label">Location</span><span class="c-value">Khulna, Bangladesh</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap footer-row">
+    <span>© 2026 Engr. Shohag Hossain</span>
+    <a href="mailto:shohaghossainruet@gmail.com">shohaghossainruet@gmail.com</a>
+  </div>
+</footer>
+
+<script>
+  (function(){
+    var sections = document.querySelectorAll('main section[id]');
+    var links = document.querySelectorAll('.nav-links a');
+    function onScroll(){
+      var pos = window.scrollY + 120;
+      var current = null;
+      sections.forEach(function(sec){ if(pos >= sec.offsetTop) current = sec.id; });
+      links.forEach(function(l){ l.classList.toggle('active', l.getAttribute('href') === '#' + current); });
+    }
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+  })();
+
+  (function(){
+    var els = document.querySelectorAll('.reveal');
+    if(!('IntersectionObserver' in window)){
+      els.forEach(function(el){ el.classList.add('is-visible'); });
+      return;
+    }
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if(entry.isIntersecting){ entry.target.classList.add('is-visible'); io.unobserve(entry.target); }
+      });
+    }, { threshold: 0.12 });
+    els.forEach(function(el){ io.observe(el); });
+  })();
+</script>
+
+</body>
+</html>
